@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 html, body {
     height: 100%;
@@ -43,12 +44,12 @@ li a {
     text-decoration: none;
     color: inherit;
 }
-li img {
+/*li img {
     float: left;
     width: 30%;
     height: 46%;
 
-}
+}*/
 footer {
     text-align: center;
     background-color: #666666;
@@ -61,7 +62,7 @@ input[type=text],
 input[type=email],
 textarea {
     display: block;
-    width: 98%;
+    width: 100%;
 }
 input[type=text],
 input[type=email],
@@ -101,6 +102,7 @@ input[type=submit] {
     color: #4aaaa5;
     font-size: 24px;
     padding: 0px 0px 35px 0px;
+    margin-bottom: 8px;
     border-bottom: 3px solid #dddddd;
 }
 .header3 {
@@ -110,6 +112,7 @@ input[type=submit] {
     padding-bottom: 25px;
     margin: 0px 0px 25px 0px;
     border-bottom: 1px solid #dddddd;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 /* Navbar */
 .nav {
@@ -122,11 +125,11 @@ input[type=submit] {
     padding: 23px;
     margin: 0px -5px;
 }
-.navlink:hover {
+/*.navlink:hover {
     color: #ffffff;
     background-color: #4aaaa5;
     padding: 38px 23px 35px 23px;
-}
+}*/
 .navalign {
     position: relative;
     left: 20px;
@@ -145,7 +148,7 @@ input[type=submit] {
 }
 .box1 {
     background-color: #ffffff;
-    max-width: 590px;
+    max-width: 650px;
     margin: 40px 40px 40px 0px;
     padding: 30px;
     float: left;
@@ -153,7 +156,7 @@ input[type=submit] {
 }
 .box2 {
     background-color: #ffffff;
-    width: 208px;
+    width: 270px;
     margin: 40px 0px;
     padding: 32px 31px;
     float: left;
@@ -164,12 +167,20 @@ input[type=submit] {
     padding-top: 30px;
     width: 100%;
 }
+.social {
+    width: 62px;
+    height: 62px;
+    margin-right: 5px;
+}
+.social:last-child {
+    margin-right: 0;
+}
 .contactform {
     width: 95%;
 }
 /* Banners placed over the image thumbnails */
 .imagecontainer1, .imagecontainer2 {
-    margin: 40px 0px 16px 0px; 
+    margin: 32px 0px 16px 0px; 
 }
 .imagecontainer1 {
     float: left;
@@ -187,8 +198,8 @@ input[type=submit] {
     font: 20px 'Georgia', Times, Times New Roman, serif;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 235px;
-    height: 20px;
+    width: 100%;
+    height: 60px;
     text-align: center;
     padding: 20px;
     position: absolute;
@@ -199,10 +210,6 @@ input[type=submit] {
     margin: 10px 0px 18px 0px;
     border-color: #dddddd;
     
-}
-/* Needed to add some padding to the middle icon in the Connect with Me section */
-.midicon {
-    padding: 0% 5%;
 }
 /* Sticky footer */
 .wrapper {
@@ -224,7 +231,7 @@ input[type=submit] {
     article img {
         width: 100%;
         height: 100%;
-        padding: 12px 25px 12px 0px;
+        padding: 12px 0px;
         float: none;
     }
     .thumbsize {
@@ -235,10 +242,10 @@ input[type=submit] {
         width: 75%;
     }
     .box1 {
-        max-width: 50%;
+        max-width: 57%;
     }
     .box2 {
-        width: 22%;
+        min-width: 28%;
     }
     .imagecontainer1, .imagecontainer2 {
         width: 100%;
@@ -253,11 +260,75 @@ input[type=submit] {
 /* Tablet display (768px or below) */
 
 @media screen and (max-width: 768px) {
-    
+    article img {
+        width: 100%;
+        height: 100%;
+        padding: 12px 0px;
+        float: none;
+    }
+    .thumbsize {
+        width: 100%;
+        height: 100%;
+    }
+    .container {
+        width: 95%;
+    }
+    .box1 {
+        max-width: 100%;
+    }
+    .box2 {
+        min-width: 95%;
+        margin: 0px 18px 30px;
+    }
+    .imagecontainer1, .imagecontainer2 {
+        width: 47%;
+        margin: 3% 0;
+    }
+    .imagecontainer1 {
+        margin-right: 3%;
+    }
+    .imagecontainer2 {
+        margin-left: 3%;
+    }
+    .smallbanner {
+        width: 100%;
+        padding: 20px 0px;
+    }
 }
 
  /*Phone display (640px or below) */
 
  @media screen and (max-width: 640px) {
-     
- }
+    .container {
+        width: 100%;
+    }
+    .container2 {
+        width: 95%;
+    }
+    .header1{
+        height: 156px;
+    }
+    .box2 {
+        min-width: 95%;
+        margin: 0px 16px 30px;
+    }
+    .name, .namecontainer {
+        width: 100%;
+        float: none;
+    }
+    .navalign {
+        position: initial;
+    }
+    .nav {
+        text-align: center;
+        padding: 23px 0px;
+    }
+    .navlink {
+        padding: 68px;
+        margin: 0px;
+/*    }
+    .navlink:hover {
+        padding: 12px 12px 12px 12px
+}
+*/ 
+}
