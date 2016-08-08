@@ -209,7 +209,7 @@ html, body {
         height: 200px;
         margin: 10px 0px 18px 0px;
         border-color: #dddddd;
-        
+
     }
     /* Sticky footer */
     .wrapper {
@@ -324,7 +324,7 @@ html, body {
             padding: 23px 0px;
         }
         .navlink {
-            padding: 68px;
+            padding: 10%;
             margin: 0px;
 /*    }
     .navlink:hover {
