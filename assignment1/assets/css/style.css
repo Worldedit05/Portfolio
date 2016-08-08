@@ -311,7 +311,7 @@ html, body {
         .name, .namecontainer {
             width: 100%;
             float: none;
-        }
+        }ß
         .navalign {
             position: initial;
         }
@@ -323,6 +323,9 @@ html, body {
             padding: 10%;
             margin: 0px;    
         }
+        .smallbanner {
+            font-size: 1.2em;
+        }
         /*.navlink:hover {
             padding: 12px 12px 12px 12px
         }*/
@@ -331,6 +334,10 @@ html, body {
         .navlink {
             padding: 8%;
         }
+        .smallbanner {
+            font-size: 1em;
+        }
+    }
     @media screen and (max-width: 350px) {
         .navlink {
             padding: 6%;
