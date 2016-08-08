@@ -278,7 +278,7 @@ html, body {
         }
         .box2 {
             min-width: 95%;
-            margin: 0px 18px 30px;
+            margin: 0 2.5% 4%;
         }
         .imagecontainer1, .imagecontainer2 {
             width: 47%;
@@ -308,10 +308,6 @@ html, body {
         .header1{
             height: 156px;
         }
-        .box2 {
-            min-width: 95%;
-            margin: 0px 16px 30px;
-        }
         .name, .namecontainer {
             width: 100%;
             float: none;
@@ -325,10 +321,18 @@ html, body {
         }
         .navlink {
             padding: 10%;
-            margin: 0px;
-/*    }
-    .navlink:hover {
-        padding: 12px 12px 12px 12px
-}
-*/ 
-}
+            margin: 0px;    
+        }
+        /*.navlink:hover {
+            padding: 12px 12px 12px 12px
+        }*/
+    }
+    @media screen and (max-width: 455px) {
+        .navlink {
+            padding: 8%;
+        }
+    @media screen and (max-width: 350px) {
+        .navlink {
+            padding: 6%;
+        }
+    }
