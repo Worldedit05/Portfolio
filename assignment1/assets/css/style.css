@@ -5,10 +5,10 @@ html, body {
     height: 100%;
     background-image: url(../images/cork-wallet.png);
 }
-div {
+/*div {
     width: 960px;
     margin: auto;
-}
+}*/
 header {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
@@ -45,6 +45,9 @@ li a {
 }
 li img {
     float: left;
+    width: 30%;
+    height: 46%;
+
 }
 footer {
     text-align: center;
@@ -53,9 +56,22 @@ footer {
     padding: 40px;
     border-top: 8px solid #4aaaa5;
 }
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 98%;
+}
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    font-size: 14px;
+}
 input[type=text] {
-    width: 562px;
-    padding: 8px 12px;
     margin: 10px 0px 18px 0px;
 }
 input[value] {
@@ -70,6 +86,10 @@ input[type=submit] {
     padding: 12px 32px;
 }
 
+.container {
+    width: 960px;
+    margin: auto;
+}
 /* Page top header */
 .header1 {
     height: 90px;
@@ -97,8 +117,6 @@ input[type=submit] {
     color: #777777;
     text-align: right;
     padding: 38px 0px;
-    position: relative;
-    left: 18px;
 }
 .navlink {
     padding: 23px;
@@ -108,6 +126,10 @@ input[type=submit] {
     color: #ffffff;
     background-color: #4aaaa5;
     padding: 38px 23px 35px 23px;
+}
+.navalign {
+    position: relative;
+    left: 20px;
 }
 .name {
     color: #ffffff;
@@ -123,10 +145,11 @@ input[type=submit] {
 }
 .box1 {
     background-color: #ffffff;
-    width: 590px;
+    max-width: 590px;
     margin: 40px 40px 40px 0px;
     padding: 30px;
     float: left;
+    width: 100%;
 }
 .box2 {
     background-color: #ffffff;
@@ -139,6 +162,10 @@ input[type=submit] {
     font: 16px 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     padding-top: 30px;
+    width: 100%;
+}
+.contactform {
+    width: 95%;
 }
 /* Banners placed over the image thumbnails */
 .imagecontainer1, .imagecontainer2 {
@@ -168,7 +195,6 @@ input[type=submit] {
     bottom: 10px;
 }
 .message {
-    width: 584px;
     height: 200px;
     margin: 10px 0px 18px 0px;
     border-color: #dddddd;
@@ -176,7 +202,7 @@ input[type=submit] {
 }
 /* Needed to add some padding to the middle icon in the Connect with Me section */
 .midicon {
-    padding: 0px 11px;
+    padding: 0% 5%;
 }
 /* Sticky footer */
 .wrapper {
@@ -189,3 +215,49 @@ input[type=submit] {
 .footer, .push {
     height: 1em;
 }
+
+/* Media queries! */
+
+/* Desktop (980px or greater) */
+
+@media screen and (max-width: 980px) {
+    article img {
+        width: 100%;
+        height: 100%;
+        padding: 12px 25px 12px 0px;
+        float: none;
+    }
+    .thumbsize {
+        width: 100%;
+        height: 100%;
+    }
+    .container {
+        width: 75%;
+    }
+    .box1 {
+        max-width: 50%;
+    }
+    .box2 {
+        width: 22%;
+    }
+    .imagecontainer1, .imagecontainer2 {
+        width: 100%;
+        margin: 28px 0px;
+    }
+    .smallbanner {
+        width: 100%;
+        padding: 20px 0px;
+    }
+}
+
+/* Tablet display (768px or below) */
+
+@media screen and (max-width: 768px) {
+    
+}
+
+ /*Phone display (640px or below) */
+
+ @media screen and (max-width: 640px) {
+     
+ }
