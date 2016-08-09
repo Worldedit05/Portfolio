@@ -4,6 +4,7 @@
 }
 html, body {
     height: 100%;
+    width: 100%;
     background-image: url(../images/cork-wallet.png);
 }
 /*div {
@@ -272,6 +273,7 @@ html, body {
         }
         .container {
             width: 95%;
+            margin: inherit;
         }
         .box1 {
             max-width: 100%;
@@ -311,7 +313,7 @@ html, body {
         .name, .namecontainer {
             width: 100%;
             float: none;
-        }ß
+        }
         .navalign {
             position: initial;
         }
