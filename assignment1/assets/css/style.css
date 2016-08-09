@@ -240,7 +240,7 @@ html, body {
             height: 100%;
         }
         .container {
-            width: 75%;
+            width: 76%;
         }
         .box1 {
             max-width: 57%;
@@ -272,14 +272,14 @@ html, body {
             height: 100%;
         }
         .container {
-            width: 95%;
+            width: 93%;
         }
         .box1 {
             max-width: 100%;
         }
         .box2 {
-            min-width: 95%;
-            margin: 0 2.5% 4%;
+            min-width: 93%;
+            margin: 0 3.5% 4%;
         }
         .imagecontainer1, .imagecontainer2 {
             width: 47%;
@@ -300,11 +300,14 @@ html, body {
     /*Phone display (640px or below) */
 
     @media screen and (max-width: 640px) {
+        .box1 {
+            width: 93%;
+            margin: 7% 3.5% 7%;
+        }
         .container {
             width: 100%;
-        }
-        .container2 {
-            width: 95%;
+            margin: auto;
+            padding-left: 0;
         }
         .header1{
             height: 156px;
