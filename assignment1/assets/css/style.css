@@ -57,6 +57,7 @@ html, body {
         color: #c5c5c5;
         padding: 40px;
         border-top: 8px solid #4aaaa5;
+        font: 14px 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     }
     label,
     input[type=text],
